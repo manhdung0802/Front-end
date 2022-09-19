@@ -1,0 +1,9 @@
+div {
+    text-align: center;
+    width: 220px;
+    background-color: lightgrey;
+    color: green;
+    border: 20px solid green;
+    box-sizing: border-box;
+    padding: 50px 20px;
+}

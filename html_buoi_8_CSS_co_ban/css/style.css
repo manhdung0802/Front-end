@@ -1,0 +1,39 @@
+table, td, th {
+    /* viền bảng rộng 1px, nét liền, màu đen */
+    border: 1px solid black;
+}
+
+table {
+    /* gộp viền bảng */
+    border-collapse: collapse;
+    /* độ rộng bảng lấp đầy bề rộng trang web */
+    width: 100%;
+}
+
+th {
+    /* căn chữ trong thanh tiêu đề sang trái */
+    text-align: left;
+}
+td {
+    /* chiều cao dòng trong bảng là 50px */
+    height: 50px;
+    /* căn theo chiều dọc */
+    vertical-align: auto;
+}
+
+th, td {
+    /* khoảng cách giữa viền bảng bên trái và nội dung */
+    padding: 15px;
+}
+
+tr:nth-child(even){
+    /* màu nền cho các dòng chẵn */
+    background-color: #c2bcbc
+}
+
+th {
+    /* màu xanh cho tiêu đề bảng */
+    background-color: #4CAF50;
+    /* màu trắng cho chữ */
+    color: white;
+}

@@ -1,0 +1,299 @@
+body,html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common color */
+h2,.fa-shield-halved,.fa-square-check,.fa-dollar-sign{
+    color: rgb(128, 80, 80);
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner .content-banner{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+}
+.banner h1{
+    font-size: 90px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.banner p{
+    margin-bottom: 60px;
+}
+.banner .banner-btn a{
+    border: 1px solid white;
+    display: inline-block;
+    width: 170px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+    z-index: 1;
+    position: relative;
+}
+.banner .banner-btn a span{
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.banner .banner-btn a:hover{
+    color: black;
+}
+.banner .banner-btn a:hover span{
+    width: 100%;
+}
+.nav,.close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(128, 80, 80);
+    text-align: center;
+    padding: 7px;
+}
+.nav{
+    z-index: 1;
+}
+.nav .nav-menu{
+    list-style-type: none;
+    position: absolute;
+    background-color: rgb(125, 82, 82);
+    top: 0px;
+    right: 0px;
+    border-radius: 10px;
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav .nav-menu li{
+    margin: 30px;
+    padding: 20px;
+    padding-right: 80px;
+    text-align: left;
+    opacity: 1;
+}
+.nav .nav-menu li:hover{
+    opacity: 0.6;
+}
+.nav .nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 10;
+}
+.nav:hover .nav-menu{
+    display: block;
+    opacity: 1;
+}
+.features, .services, .testimonial{
+    text-align: center;
+    margin: 20px;
+}
+.features h1, .testimonial h1{
+    font-weight: 100;
+    color: black;
+    margin-bottom: 70px;
+}
+.features .fa-scissors, .testimonial .fa-scissors{
+    color: rgb(125, 82, 82);
+}
+.features .features-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 90%;
+    margin: auto;
+}
+.features img{
+    border-radius: 10px;
+}
+.features .features-content{
+
+}
+.features .features-content ul{
+    list-style-type: none;
+    text-align: left;
+    color: black;
+    margin-right: 40px;
+}
+.features .features-container .features-content-sidebar{
+    display: grid;
+    grid-template-areas: 
+    "features-header features-header"
+    "features-icon features-p";
+    grid-template-columns: 10% 90%;
+}
+.features .features-content li,h2{
+    margin-bottom: 10px;
+    padding-right: 10px;
+    grid-area: features-header;
+}
+.fa-shield-halved,.fa-square-check,.fa-dollar-sign{
+    grid-area: features-icon;
+    font-size: 30px;
+    position: relative;
+    top:20px;
+    width: 100%;
+}
+.services,.footer{
+    background-color: rgb(194, 143, 143);
+    padding: 20px;
+}
+.services h1, .footer h1{
+    font-weight: 100;
+    color: white;
+    margin-bottom: 40px;
+}
+.services .services-img{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.services .services-img div{
+    width: 50%;
+    position: relative;
+}
+.services .services-img img{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 0.5s;
+}
+.services .services-img .services-img-text{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.services .services-img div:hover img{
+    opacity: 0.3;
+}
+.services .services-img div:hover .services-img-text{
+    opacity: 1;
+    transform: translateY(-10%);
+}
+.testimonial-content{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.testimonial-content-1 {
+    display: grid;
+    grid-template-areas: "avatar nickname"
+    "comment comment";
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    box-shadow: 5px 5px 5px rgb(194, 143, 143);
+    transition: 0.5s;
+}
+.avatar{
+    width: 50%;
+    grid-area: avatar;
+    padding-right: 20px;
+}
+.avatar img{
+    width: 100%;
+}
+.nickname{
+    width: 100%;
+    grid-area: nickname;
+}
+.comment{
+    padding-top: 20px;
+    grid-area: comment;
+}
+.testimonial-content-1:hover {
+    transform: translateY(-20%);
+}
+.footer{
+    text-align: center;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.hour{
+    flex-grow: 1;
+    text-align: left;
+}
+.address{
+    flex-grow: 1;
+    text-align: right;
+}
+.contact{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .testimonial-content{
+        flex-direction: column;
+    }
+    .hour, .address{
+        width: 100%;
+        text-align: center;
+    }
+    .services .services-img{
+        display: block;
+        width: 90%;
+    }
+    .services .services-img div{
+        width: 100%;
+    }
+    .features .features-container{
+        display: block;
+    }
+    .banner .content-banner{
+        position: absolute;
+        top: 5%;
+        text-align: center;
+        width: 100%;
+    }
+    .banner p{
+        margin-bottom: 10px;
+    }
+    .testimonial-content-1 {
+        width: 90%;
+    }  
+    .testimonial-content-1:hover {
+        transform: translateX(10%);
+    }
+}
+

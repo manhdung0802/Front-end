@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#header{
+    background-color: blue;
+    height: 50px;
+}
+#sidebar_left{
+    float: left;
+    height: 400px;
+    background-color: lightgray;
+    width: 25%;
+}
+#content{
+    background-color: lightgray;
+    float: left;
+    height: 400px;
+    width: 39%;
+}
+#content_top, #content_bottom{
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+#content_top{
+    height: 100px;
+}
+#content_bottom{
+    height: 250px;
+}
+#sidebar_right{
+    float: left;
+    width: 35%;
+    background-color: lightgray;
+    height: 400px;
+}
+#sidebar_right_bottom,#sidebar_right_top{
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    height: 150px;
+}

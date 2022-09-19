@@ -1,0 +1,60 @@
+ul.a {
+    /* tạo kiểu cho dấu đầu dòng */
+    list-style-type: circle;
+}
+
+ul.b {
+     /* tạo kiểu cho dấu đầu dòng */
+    list-style-type: square;
+}
+
+ol.c {
+     /* tạo kiểu cho dấu đầu dòng */
+    list-style-type: upper-roman;
+}
+
+ol.d {
+     /* tạo kiểu cho dấu đầu dòng */
+    list-style-type: lower-alpha;
+}
+ul {
+     /* tạo kiểu cho dấu đầu dòng theo hình ảnh*/
+    list-style-image: url('http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png');
+}
+ul.a {
+    /* dấu đầu dòng ở trong list */
+    list-style-position:inside;
+}
+ul.b {
+    /* dấu đầu dòng ở ngoài list */
+    list-style-position:outside;
+}
+ul {
+     /* tạo kiểu cho dấu đầu dòng theo hình ảnh*/
+    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+}
+
+ol {
+    /* nền và khoảng cách viền của các li */
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul {
+    /* nền và khoảng cách viền của thẻ ul */
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    /* nền và khoảng cách viền của thẻ li */
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li {
+    /* nền và khoảng cách viền của thẻ li */
+    background: #cce5ff;
+    margin: 5px;
+}
