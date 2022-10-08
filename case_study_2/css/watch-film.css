@@ -1,0 +1,69 @@
+:root {
+    --background-color: rgb(13, 13, 24);
+    --bd-violet: rgb(78, 78, 206);
+    --bd-white: white;
+}
+body,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: var(--background-color);
+}
+.navbar .navbar-brand img {
+    width: 100%;
+}
+.navbar-brand{
+    width: 80px;
+}
+.navbar a{
+    color: white;
+}
+.nav-link:hover {
+    color: red;
+}
+
+.section {
+    position: relative;
+    top: 50px;
+}
+.section .section-content {
+    width: 90%;
+}
+.section .section-content .back-main:hover{
+    color: yellow;
+}
+
+.subscene-link a:hover,.comment a:hover {
+    color: yellow;
+}
+
+.footer-content {
+    width: 90%;
+}
+.footer .card-title-link:hover{
+    color: yellow;
+}
+.footer .card-text li{
+    color: rgb(183, 179, 179);
+}
+
+.footer {
+    height: 200px;
+    background-color: blueviolet;
+}
+
+
+
+  

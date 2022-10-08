@@ -1,0 +1,130 @@
+:root {
+    --background-color: rgb(13, 13, 24);
+    --bd-violet: rgb(78, 78, 206);
+    --bd-white: white;
+}
+body,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: var(--background-color);
+}
+.navbar .navbar-brand img {
+    width: 100%;
+}
+.navbar-brand{
+    width: 80px;
+}
+.navbar a{
+    color: white;
+}
+.nav-link:hover {
+    color: red;
+}
+.content{
+   width: 100%;
+   
+   background-color: var(--background-color);
+}
+
+.content .card-img-overlay{
+    margin-top: 200px;
+    width: 90%;
+}
+.content .image-content img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    filter: brightness(40%);
+}
+.content .section {
+    height: 1120px;
+}
+
+.content .section .section-left, .content .section .section-right {
+    position: relative;
+    top: 100px;
+}
+
+.section-right .description{
+    margin-top: 14px;
+    font-weight: lighter;
+    opacity: 0.75;
+    line-height: 1.8;
+}
+.content .card {
+    background-color: var(--background-color);
+}
+
+.content .actor .card img {
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    width: 120px;
+    height: 120px;
+}
+.content .actor .card .card-body h5{
+    font-size: 13px;
+    font-weight: bolder;
+}
+.content .actor .card .card-body p{
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.actor .card img:hover {
+    border: 3px solid orange;
+}
+
+.actor .card h5:hover {
+    text-decoration: underline;
+}
+
+.trailer .trailer-video:hover {
+    border: 2px solid;
+    border-color: orange;
+}
+.trailer img {
+    width: 100%;
+}
+.trailer-video i{
+    font-size: 60px;
+    display: none;
+}
+.trailer .trailer-video:hover i{
+    display: block;
+}
+.similar-film .card {
+    transition: 0.5s;
+}
+.similar-film .card:hover {
+    opacity: 0.5;
+}
+.footer-content {
+    width: 90%;
+}
+.footer .card-title-link:hover, .section .section-right h3 a:hover{
+    color: yellow;
+}
+.footer .card-text li{
+    color: rgb(183, 179, 179);
+}
+td {
+    width: 120px;
+    font-size: 15px;
+}
+
+  

@@ -1,0 +1,52 @@
+:root {
+    --background-color: rgb(13, 13, 24);
+}
+body,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: var(--background-color);
+}
+.navbar {
+    background-color: var(--background-color);
+}
+.navbar .navbar-brand img {
+    width: 100%;
+}
+.navbar-brand{
+    width: 80px;
+}
+.navbar a{
+    color: white;
+}
+.nav-link:hover {
+    color: red;
+}
+.content{
+   width: 90%;
+   margin-top: 100px;
+}
+.content .card {
+    background-color: var(--background-color);
+}
+.content div a{
+    transition: 0.5s;
+}
+.content div a:hover {
+    opacity: 0.4;
+}
+.footer-content {
+    width: 90%;
+}
+.footer .card-title-link:hover{
+    color: yellow;
+}
+.footer .card-text li{
+    color: rgb(183, 179, 179);
+}
