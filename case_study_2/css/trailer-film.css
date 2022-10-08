@@ -127,4 +127,14 @@ td {
     font-size: 15px;
 }
 
+@media screen and (max-width: 1120px) {
+    .content .section {
+        height: 2600px;
+    }
+    .actor .card{
+        width: 30%;
+    }
+}
+
+
   
