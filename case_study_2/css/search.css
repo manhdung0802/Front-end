@@ -1,5 +1,7 @@
 :root {
     --background-color: rgb(13, 13, 24);
+    --bd-violet: rgb(78, 78, 206);
+    --bd-white: white;
 }
 body,
 html {
@@ -12,6 +14,26 @@ html {
     font-size: 13px;
     color: white;
     background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+}
+
+.content-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0px auto 370px;
+    grid-template-areas: "header"
+    "section"
+    "footer";
+}
+
+.navbar {
+    width: 100%;
+    background-color: green;
+    grid-area: header;
+    height: auto;
 }
 .navbar {
     background-color: var(--background-color);
@@ -28,18 +50,26 @@ html {
 .nav-link:hover {
     color: red;
 }
+.section {
+    grid-area: section;
+    margin-top: 0px;
+}
 .content{
-   width: 90%;
-   margin-top: 100px;
-}
-.content .card {
-    background-color: var(--background-color);
-}
-.content div a{
-    transition: 0.5s;
-}
-.content div a:hover {
-    opacity: 0.4;
+    width: 90%;
+    margin-top: 100px;
+ }
+ .content .card {
+     background-color: var(--background-color);
+ }
+ .content div a{
+     transition: 0.5s;
+ }
+ .content div a:hover {
+     opacity: 0.4;
+ }
+.footer-main {
+    width: 100%;
+    grid-area: footer;
 }
 .footer-content {
     width: 90%;
@@ -49,4 +79,8 @@ html {
 }
 .footer .card-text li{
     color: rgb(183, 179, 179);
+}
+.footer img {
+    width: 100%;
+    object-fit: contain;
 }

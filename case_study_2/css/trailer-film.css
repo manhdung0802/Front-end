@@ -55,8 +55,7 @@ a {
 }
 
 .content .section .section-left, .content .section .section-right {
-    position: relative;
-    top: 100px;
+    margin-top: 100px;
 }
 
 .section-right .description{
