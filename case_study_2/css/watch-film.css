@@ -57,6 +57,23 @@ a {
 .footer .card-text li{
     color: rgb(183, 179, 179);
 }
+.alert {
+    margin-top: 1250px;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    background-color: rgb(220, 173, 86);
+    color: white;
+    border: none;
+    font-weight: 100;
+    animation: alert 2s 1;
+    animation-direction: alternate;
+}
+@keyframes alert {
+    0%   {top: 0px;}
+    50%  {top: -750px;}
+    100% {top: -650px;}
+  }
 
 
 
